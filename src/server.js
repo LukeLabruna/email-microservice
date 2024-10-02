@@ -1,6 +1,4 @@
-const express = require('express')
-
-const app = express()
+const app = require("./app.js")
 
 const port = parseInt(process.env.PORT) || process.argv[3] || 8080
 
