@@ -1,5 +1,5 @@
 {
-  "name": "node-express-web",
+  "name": "email-microservice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,12 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "LukeLabruna",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "googleapis": "^144.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
