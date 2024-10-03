@@ -1,18 +1,18 @@
-const sendEmail = require("../services/email.service.js")
+import sendEmail from "../services/email.service.js"
 
 class EmailController {
 
     async sendEmail(req, res) {
 
-        const { to, subject, text, html, oauth2Credentials } = req.body
+        const { to, subject, text, html, userEmail, appPassword } = req.body
 
-        if (!to || !subjet || !text || !html || !oauth2Credentials) {
+        if (!to || !subject || !text || !html || !userEmail || !appPassword) {
             return res.status(400).json({status: "error", message: "All parameters are required."})
         }
 
         try {
             
-            const result = await sendEmail(to, subject, text, html, oauth2Credentials)
+            const result = await sendEmail(to, subject, text, html, userEmail, appPassword)
 
             res.status(200).json({status: "success", message: "Email sent successfully.", data: result})
 
@@ -22,4 +22,4 @@ class EmailController {
     }
 }
 
-module.exports = EmailController
+export default EmailController
