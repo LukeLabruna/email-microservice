@@ -1,5 +1,5 @@
 
-# Email Sender API
+# Email Micro Service
 
 Este proyecto es una API simple para enviar correos electrónicos utilizando [Nodemailer](https://nodemailer.com/) y Gmail. La API permite a los usuarios enviar correos electrónicos especificando la dirección de destino, el asunto, el contenido y las credenciales de Gmail.
 
@@ -8,7 +8,7 @@ Este proyecto es una API simple para enviar correos electrónicos utilizando [No
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/usuario/email-sender-api.git
+   git clone https://github.com/LukeLabruna/email-microservice
    ```
 
 2. Navega al directorio del proyecto:
@@ -25,13 +25,7 @@ Este proyecto es una API simple para enviar correos electrónicos utilizando [No
 
 ## Uso
 
-1. Crea un archivo `.env` en la raíz del proyecto y define el puerto:
-
-   ```
-   PORT=3000
-   ```
-
-2. Ejecuta la aplicación:
+1. Ejecuta la aplicación:
 
    ```bash
    npm start
