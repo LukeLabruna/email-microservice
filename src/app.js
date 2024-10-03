@@ -9,5 +9,7 @@ app.use(urlencoded({ extended: true }))
 app.use(json())
 
 app.use("/api", emailRouter)
-
+app.get("/", (req, res) => {
+    res.status(200).json({status: "success", message: "Microservice working"})
+})
 export default app
