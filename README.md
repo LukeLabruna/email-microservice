@@ -14,7 +14,7 @@ Este proyecto es una API simple para enviar correos electrónicos utilizando [No
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd email-sender-api
+   cd email-microservice
    ```
 
 3. Instala las dependencias:
